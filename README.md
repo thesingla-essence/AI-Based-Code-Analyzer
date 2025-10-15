@@ -1,7 +1,3 @@
-Perfect ✅ Here’s your **advanced, professional, and beautifully styled Markdown version** of the README — fully formatted for GitHub with badges, emojis, and clean section layouts:
-
----
-
 ````markdown
 # 🧠 AI-Based Code Analyzer
 
@@ -69,11 +65,11 @@ java CodeAnalyzerApp sample/SampleClass.java
 ```
 AI-Code-Analyzer/
 │
-├── CodeAnalyzerApp.java   # Main application entry point
-├── Parser.java            # Handles file reading and parsing
-├── Analyzer.java          # Performs code analysis and scoring
-├── Reporter.java          # Generates formatted analysis reports
-└── sample/                # Contains sample Java files
+├── CodeAnalyzerApp.java
+├── Parser.java
+├── Analyzer.java
+├── Reporter.java
+└── sample/
 ```
 
 ---
@@ -132,8 +128,4 @@ Suggestions:
 ⭐ *If you like this project, consider giving it a star on GitHub!*
 
 ```
-
----
-
-Would you like me to make a **GitHub badge section** at the top (e.g., stars, forks, last commit) — like a professional open-source project? It gives your README a polished and repository-ready appearance.
 ```
