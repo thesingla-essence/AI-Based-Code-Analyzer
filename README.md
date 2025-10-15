@@ -1,6 +1,5 @@
 ````markdown
 # 🧠 AI-Based Code Analyzer
-
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=java&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-CLI-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
