@@ -1,15 +1,17 @@
-Perfect ✅ Here’s the **final, ready-to-use `README.md`** — fully styled, modern, and GitHub-compatible with **working badges**, emojis, and author section.
-Just copy–paste this into your `README.md` — all links and badges work correctly 👇
-
----
 
 ````markdown
 # ⚡ AI-Based Code Analyzer
 
-[![Made with Java](https://img.shields.io/badge/Made%20with-Java-orange?style=for-the-badge&logo=java)](https://www.java.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Open Source](https://img.shields.io/badge/Open%20Source-💻-brightgreen?style=for-the-badge)](#)
-[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-purple?style=for-the-badge)](#)
+<p align="center">
+  <a href="https://www.java.com/">
+    <img src="https://img.shields.io/badge/Made%20with-Java-orange?style=for-the-badge&logo=java" alt="Made with Java">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT">
+  </a>
+  <img src="https://img.shields.io/badge/Open%20Source-💻-brightgreen?style=for-the-badge" alt="Open Source">
+  <img src="https://img.shields.io/badge/Contributions-Welcome-purple?style=for-the-badge" alt="Contributions Welcome">
+</p>
 
 A **Java-based intelligent tool** that analyzes Java source files for **code quality metrics**, detects potential issues, and provides **smart suggestions** for improvement.
 
@@ -117,5 +119,4 @@ This project is open-source and available under the **[MIT License](https://open
 > — *AI-Based Code Analyzer Team*
 
 ```
-ou like me to add a **“Demo Screenshot” section** (for your sample output or UI image) with a placeholder image link so it looks even more polished on GitHub?
-```
+
