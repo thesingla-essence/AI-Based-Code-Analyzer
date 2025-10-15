@@ -1,130 +1,115 @@
-````markdown
-# 🧠 AI-Based Code Analyzer
-![Java](https://img.shields.io/badge/Java-17-orange?logo=java&logoColor=white)
+---
+
+# 🚀 AI-Based Code Analyzer
+
+> An **intelligent static analysis tool** built in **Java** that reviews Java source code for quality, complexity, and best practices — helping developers write cleaner, more maintainable programs.
+
+![Java](https://img.shields.io/badge/Java-17-orange?logo=java\&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-CLI-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Version-1.0.0-purple)
 
-> An **intelligent static analysis tool** built in **Java** that scans source files to measure code quality, maintainability, and complexity — offering meaningful feedback for developers.
+---
+
+## ✨ Features
+
+* 🔍 **Automatic Code Review** — Analyzes Java source files for code quality issues.
+* 🧩 **Unused Variable Detection** — Flags variables declared but never used.
+* 📏 **Long Method Detection** — Identifies methods exceeding 30 lines.
+* 🗒️ **Comment Analysis** — Detects missing class or method comments.
+* ⚙️ **Complexity Evaluation** — Scores code based on control structures and nesting.
+* 📊 **Quality Report Generation** — Produces detailed text reports with improvement suggestions.
 
 ---
 
-## 🚀 Features
+## 🧠 How It Works
 
-- 🔍 **Static Code Analysis** — Examines Java source files for structural and logical issues  
-- 🧩 **Unused Variable Detection** — Finds variables that are declared but never used  
-- 📏 **Long Method Identification** — Detects methods longer than 30 lines  
-- 🗒️ **Missing Comments Check** — Reports missing class or method-level documentation  
-- ⚙️ **Complexity Evaluation** — Analyzes nested loops and conditional structures  
-- 📊 **Code Quality Scoring** — Generates a **quantitative score (0–100)** for each file  
-- 🧾 **Report Export** — Optionally exports analysis results to a text file  
+1. **Parses Java source files** using the built-in file reader.
+2. **Analyzes code metrics** such as variables, method size, and comment density.
+3. **Computes a complexity score** and assigns an overall quality rating.
+4. **Generates a summary report** for developers to improve their code.
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Requirements
 
-| Component | Description |
-|------------|--------------|
-| **Language** | Java (JDK 8 or higher) |
-| **Execution** | Command Line / Terminal |
-| **Dependencies** | None (pure Java implementation) |
+* **Java Development Kit (JDK) 8 or higher**
+* Works on **Windows**, **Linux**, and **macOS** (via command line)
 
 ---
 
-## ⚙️ Installation & Usage
+## ⚙️ Build & Run Instructions
 
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/<your-username>/AI-Code-Analyzer.git
-cd AI-Code-Analyzer
-````
+1. **Compile all source files**
 
-### 2️⃣ Compile the Source
+   ```bash
+   javac *.java
+   ```
 
-```bash
-javac *.java
-```
+2. **Run the analyzer with your Java file**
 
-### 3️⃣ Run the Analyzer
+   ```bash
+   java CodeAnalyzerApp path/to/your/file.java
+   ```
 
-```bash
-java CodeAnalyzerApp path/to/your/File.java
-```
+3. **Or test with the sample file**
 
-or test with the provided sample file:
-
-```bash
-java CodeAnalyzerApp sample/SampleClass.java
-```
+   ```bash
+   java CodeAnalyzerApp sample/SampleClass.java
+   ```
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
-```
-AI-Code-Analyzer/
-│
-├── CodeAnalyzerApp.java
-├── Parser.java
-├── Analyzer.java
-├── Reporter.java
-└── sample/
-```
+| File                   | Description                                   |
+| ---------------------- | --------------------------------------------- |
+| `CodeAnalyzerApp.java` | Main application entry point                  |
+| `Parser.java`          | Handles file input and parsing                |
+| `Analyzer.java`        | Core logic for code analysis                  |
+| `Reporter.java`        | Generates and exports analysis reports        |
+| `sample/`              | Contains sample Java source files for testing |
 
 ---
 
-## 📈 Example Output
+## 🧾 Sample Output
 
 ```
-Analyzing: SampleClass.java
------------------------------------
+File: SampleClass.java
 Total Methods: 3
 Unused Variables: 2
 Long Methods (>30 lines): 1
 Missing Comments: 2
 Complexity Score: 68/100
 Overall Rating: Moderate
-
-Suggestions:
-- Shorten long methods for readability
-- Add missing comments to improve maintainability
-- Simplify nested control structures
------------------------------------
 ```
 
 ---
 
-## ⚖️ Scoring Metrics
+## 📈 Scoring Metrics
 
-| Metric                               | Penalty             |
-| ------------------------------------ | ------------------- |
-| Unused Variable                      | -5 points each      |
-| Long Method (>30 lines)              | -10 points each     |
-| Missing Comment                      | -2 points each      |
-| Control Structures (above threshold) | -1 point each       |
-| Deep Nesting (>4 levels)             | -3 points per level |
-
----
-
-## 💡 Future Enhancements
-
-* 🖥️ Add **GUI support** using JavaFX or Swing
-* 🧩 Integrate with **Maven/Gradle** for automation
-* 📄 Generate **HTML or PDF reports**
-* 🤖 Introduce **ML-based detection** for code smells
-* 🔌 Create **VS Code / IntelliJ plugin** integration
+| Metric                   | Penalty             | Description                              |
+| ------------------------ | ------------------- | ---------------------------------------- |
+| Unused Variable          | -5 points           | Variable declared but unused             |
+| Long Method              | -10 points          | Method exceeds 30 lines                  |
+| Missing Comment          | -2 points           | Missing documentation on classes/methods |
+| Extra Control Structures | -1 point each       | Loops, conditions, and branches          |
+| Deep Nesting (>4 levels) | -3 points per level | Nested logic adds complexity             |
 
 ---
 
-## 🧑‍💻 Author
+## 🧑‍💻 Tech Stack
+
+* **Language:** Java
+* **Paradigm:** Object-Oriented Programming
+* **Core Concepts:** File Handling, String Manipulation, Static Analysis
+
+---
+
+## 👩‍🎓 Author
 
 **Mahak Singla**
 📧 [minkisingla29@gmail.com](mailto:minkisingla29@gmail.com)
-💼 *Passionate Java Developer | Building tools that improve code quality and developer productivity*
 
 ---
 
-⭐ *If you like this project, consider giving it a star on GitHub!*
-
-```
-```
