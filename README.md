@@ -1,5 +1,3 @@
-
-````markdown
 # ⚡ AI-Based Code Analyzer
 
 <p align="center">
@@ -41,16 +39,14 @@ A **Java-based intelligent tool** that analyzes Java source files for **code qua
 ### 1️⃣ Compile all Java files:
 ```bash
 javac *.java
-````
+```
 
 ### 2️⃣ Run the analyzer on your file:
-
 ```bash
 java CodeAnalyzerApp path/to/your/file.java
 ```
 
 ### 3️⃣ Try the included sample:
-
 ```bash
 java CodeAnalyzerApp sample/SampleClass.java
 ```
@@ -59,13 +55,13 @@ java CodeAnalyzerApp sample/SampleClass.java
 
 ## 🧩 Project Structure
 
-| File                   | Description                            |
-| ---------------------- | -------------------------------------- |
-| `CodeAnalyzerApp.java` | Main application entry point           |
-| `Parser.java`          | Handles file reading and code parsing  |
-| `Analyzer.java`        | Performs code analysis and scoring     |
-| `Reporter.java`        | Generates analysis reports             |
-| `sample/`              | Contains sample Java files for testing |
+| File | Description |
+|------|--------------|
+| `CodeAnalyzerApp.java` | Main application entry point |
+| `Parser.java` | Handles file reading and code parsing |
+| `Analyzer.java` | Performs code analysis and scoring |
+| `Reporter.java` | Generates analysis reports |
+| `sample/` | Contains sample Java files for testing |
 
 ---
 
@@ -85,26 +81,26 @@ Overall Rating: Moderate
 
 ## 📊 Code Quality Metrics
 
-| Metric                                       | Penalty             |
-| -------------------------------------------- | ------------------- |
-| 🧩 Unused Variables                          | −5 points each      |
-| 📏 Long Methods                              | −10 points each     |
-| 🗒️ Missing Comments                         | −2 points each      |
-| ⚙️ Complexity (excessive control structures) | −1 point each       |
-| 🕳️ Deep Nesting (>4 levels)                 | −3 points per level |
+| Metric | Penalty |
+|--------|----------|
+| 🧩 Unused Variables | −5 points each |
+| 📏 Long Methods | −10 points each |
+| 🗒️ Missing Comments | −2 points each |
+| ⚙️ Complexity (excessive control structures) | −1 point each |
+| 🕳️ Deep Nesting (>4 levels) | −3 points per level |
 
 ---
 
 ## 👩‍🎓 Author
 
-**Mahak Singla**
+**Mahak Singla**  
 📧 [minkisingla29@gmail.com](mailto:minkisingla29@gmail.com)
 
 ---
 
 ## ⭐ Contribute
 
-Pull requests are welcome!
+Pull requests are welcome!  
 If you find a bug 🐛 or have an idea 💡 for improvement, feel free to **open an issue** or **submit a PR**.
 
 ---
@@ -115,8 +111,5 @@ This project is open-source and available under the **[MIT License](https://open
 
 ---
 
-> Made with ☕ and 💡 in Java
+> Made with ☕ and 💡 in Java  
 > — *AI-Based Code Analyzer Team*
-
-```
-
