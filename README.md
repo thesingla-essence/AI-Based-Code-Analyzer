@@ -1,78 +1,48 @@
----
+# AI-Based Code Analyzer
 
-# 🚀 AI-Based Code Analyzer
+A Java-based tool that analyzes Java source files for code quality metrics and provides suggestions for improvement.
 
-> An **intelligent static analysis tool** built in **Java** that reviews Java source code for quality, complexity, and best practices — helping developers write cleaner, more maintainable programs.
+## Features
 
-![Java](https://img.shields.io/badge/Java-17-orange?logo=java\&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-CLI-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Version-1.0.0-purple)
+- Analyzes Java source files for code quality issues
+- Detects unused variables
+- Identifies long methods (>30 lines)
+- Checks for missing class/method comments
+- Evaluates code complexity based on control structures
+- Generates quality score and suggestions
+- Optional export of analysis report to text file
 
----
+## Requirements
 
-## ✨ Features
+- Java Development Kit (JDK) 8 or later
+- Command line or terminal access
 
-* 🔍 **Automatic Code Review** — Analyzes Java source files for code quality issues.
-* 🧩 **Unused Variable Detection** — Flags variables declared but never used.
-* 📏 **Long Method Detection** — Identifies methods exceeding 30 lines.
-* 🗒️ **Comment Analysis** — Detects missing class or method comments.
-* ⚙️ **Complexity Evaluation** — Scores code based on control structures and nesting.
-* 📊 **Quality Report Generation** — Produces detailed text reports with improvement suggestions.
+## Building and Running
 
----
+1. Compile all Java files:
+```bash
+javac *.java
+```
 
-## 🧠 How It Works
+2. Run the analyzer with a Java source file:
+```bash
+java CodeAnalyzerApp path/to/your/file.java
+```
 
-1. **Parses Java source files** using the built-in file reader.
-2. **Analyzes code metrics** such as variables, method size, and comment density.
-3. **Computes a complexity score** and assigns an overall quality rating.
-4. **Generates a summary report** for developers to improve their code.
+Or run with the included sample:
+```bash
+java CodeAnalyzerApp sample/SampleClass.java
+```
 
----
+## Project Structure
 
-## 🧰 Requirements
+- `CodeAnalyzerApp.java` - Main application entry point
+- `Parser.java` - Handles file reading and code parsing
+- `Analyzer.java` - Performs code analysis and scoring
+- `Reporter.java` - Generates analysis reports
+- `sample/` - Contains sample Java files for testing
 
-* **Java Development Kit (JDK) 8 or higher**
-* Works on **Windows**, **Linux**, and **macOS** (via command line)
-
----
-
-## ⚙️ Build & Run Instructions
-
-1. **Compile all source files**
-
-   ```bash
-   javac *.java
-   ```
-
-2. **Run the analyzer with your Java file**
-
-   ```bash
-   java CodeAnalyzerApp path/to/your/file.java
-   ```
-
-3. **Or test with the sample file**
-
-   ```bash
-   java CodeAnalyzerApp sample/SampleClass.java
-   ```
-
----
-
-## 📁 Project Structure
-
-| File                   | Description                                   |
-| ---------------------- | --------------------------------------------- |
-| `CodeAnalyzerApp.java` | Main application entry point                  |
-| `Parser.java`          | Handles file input and parsing                |
-| `Analyzer.java`        | Core logic for code analysis                  |
-| `Reporter.java`        | Generates and exports analysis reports        |
-| `sample/`              | Contains sample Java source files for testing |
-
----
-
-## 🧾 Sample Output
+## Sample Output
 
 ```
 File: SampleClass.java
@@ -84,28 +54,14 @@ Complexity Score: 68/100
 Overall Rating: Moderate
 ```
 
----
+## Code Quality Metrics
 
-## 📈 Scoring Metrics
-
-| Metric                   | Penalty             | Description                              |
-| ------------------------ | ------------------- | ---------------------------------------- |
-| Unused Variable          | -5 points           | Variable declared but unused             |
-| Long Method              | -10 points          | Method exceeds 30 lines                  |
-| Missing Comment          | -2 points           | Missing documentation on classes/methods |
-| Extra Control Structures | -1 point each       | Loops, conditions, and branches          |
-| Deep Nesting (>4 levels) | -3 points per level | Nested logic adds complexity             |
-
----
-
-## 🧑‍💻 Tech Stack
-
-* **Language:** Java
-* **Paradigm:** Object-Oriented Programming
-* **Core Concepts:** File Handling, String Manipulation, Static Analysis
-
----
-
+- **Unused Variables**: -5 points each
+- **Long Methods**: -10 points each
+- **Missing Comments**: -2 points each
+- **Complexity Penalties**:
+  - High number of control structures: -1 point each above threshold
+  - Deep nesting (>4 levels): -3 points per level
 ## 👩‍🎓 Author
 
 **Mahak Singla**
