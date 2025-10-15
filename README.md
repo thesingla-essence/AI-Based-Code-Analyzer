@@ -105,11 +105,4 @@ If you find a bug 🐛 or have an idea 💡 for improvement, feel free to **open
 
 ---
 
-## 🪪 License
 
-This project is open-source and available under the **[MIT License](https://opensource.org/licenses/MIT)**.
-
----
-
-> Made with ☕ and 💡 in Java  
-> — *AI-Based Code Analyzer Team*
