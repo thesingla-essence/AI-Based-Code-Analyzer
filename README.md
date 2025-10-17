@@ -1,14 +1,12 @@
 ---
 
-# ⚡ AI-Based Code Analyzer
+#  AI-Based Code Analyzer
 
 <p align="center">
   <a href="https://www.java.com/">
     <img src="https://img.shields.io/badge/Made%20with-Java-orange?style=for-the-badge&logo=java" alt="Java">
   </a>
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License">
-  </a>
+  
   <img src="https://img.shields.io/badge/Open%20Source-💻-brightgreen?style=for-the-badge">
   <img src="https://img.shields.io/badge/Contributions-Welcome-purple?style=for-the-badge">
 </p>
