@@ -34,22 +34,68 @@ A **Java-based intelligent tool** that analyzes Java source files for **code qua
 
 ---
 
-## ⚙️ Build & Run
+## ⚙️ How to Run
 
-### 1️⃣ Compile all Java files:
-```bash
-javac *.java
+### 🧩 Step 1 — Compile the Source Files
+
+#### 🪟 For Windows (PowerShell)
+```powershell
+cd "C:\path\to\AI_Code_Analyzer"
+javac -encoding UTF-8 *.java sample/*.java
 ```
 
-### 2️⃣ Run the analyzer on your file:
+#### 🐧 For Linux / Mac (Terminal)
 ```bash
-java CodeAnalyzerApp path/to/your/file.java
+cd /path/to/AI_Code_Analyzer
+javac -encoding UTF-8 *.java sample/*.java
 ```
 
-### 3️⃣ Try the included sample:
+---
+
+### 🚀 Step 2 — Run the Analyzer
+
+#### ➤ Analyze a Single File
 ```bash
-java CodeAnalyzerApp sample/SampleClass.java
+java -cp . CodeAnalyzerApp sample/SampleClass.java
 ```
+
+#### ➤ Analyze an Entire Folder
+```bash
+java -cp . CodeAnalyzerApp sample/
+```
+
+#### ➤ Export the Output to a Report File
+```bash
+java -cp . CodeAnalyzerApp sample/SampleClass.java > reports/output.txt
+```
+
+> 💡 *Tip:* Always use `-encoding UTF-8` during compilation to avoid encoding issues.
+
+---
+
+## 🎥 Demo Video
+
+Watch a short walkthrough of the AI-Based Code Analyzer in action 👇  
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/1Pli6mMXCu0Td5tvw8nnJYSSxrtEXM6xv/view?usp=drivesdk" target="_blank">
+    <img src="https://img.youtube.com/vi/demo-link-here/0.jpg" alt="Watch Demo" width="70%" style="border-radius:12px;">
+  </a>
+</p>
+
+> 🎬 *Replace the YouTube link above with your demo video once it’s uploaded.*
+
+---
+
+## 🖼️ Screenshots
+
+<p align="center">
+  <img src="assets/1.png" alt="Main Menu" width="80%" style="border-radius:12px; margin-bottom: 10px;"><br>
+  <img src="assets/2.png" alt="Code Analysis Output" width="80%" style="border-radius:12px; margin-bottom: 10px;"><br>
+  <img src="assets/3.png" alt="Generated Report" width="80%" style="border-radius:12px;">
+</p>
+
+> 🧾 *Store your screenshots in the `assets/` folder and update the file paths above.*
 
 ---
 
@@ -83,11 +129,11 @@ Overall Rating: Moderate
 
 | Metric | Penalty |
 |--------|----------|
-| 🧩 Unused Variables | −5 points each |
-| 📏 Long Methods | −10 points each |
-| 🗒️ Missing Comments | −2 points each |
-| ⚙️ Complexity (excessive control structures) | −1 point each |
-| 🕳️ Deep Nesting (>4 levels) | −3 points per level |
+| 🧩 **Unused Variables** | −5 points each |
+| 📏 **Long Methods** | −10 points each |
+| 🗒️ **Missing Comments** | −2 points each |
+| ⚙️ **Complexity (excessive control structures)** | −1 point each |
+| 🕳️ **Deep Nesting (>4 levels)** | −3 points per level |
 
 ---
 
@@ -101,8 +147,6 @@ Overall Rating: Moderate
 ## ⭐ Contribute
 
 Pull requests are welcome!  
-If you find a bug 🐛 or have an idea 💡 for improvement, feel free to **open an issue** or **submit a PR**.
+If you find a **bug 🐛** or have an **idea 💡** for improvement, feel free to **open an issue** or **submit a PR**.
 
----
-
-
+Together, let’s make Java code smarter 💪
